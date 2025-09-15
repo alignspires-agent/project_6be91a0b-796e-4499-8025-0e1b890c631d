@@ -1,31 +1,67 @@
 Lambda Execution Result (Latest Run):
-INIT_REPORT Init Duration: 10001.97 ms	Phase: init	Status: timeout
+INIT_REPORT Init Duration: 9997.41 ms	Phase: init	Status: timeout
+
+=== Experiment Output ===
+
+=== EXPERIMENT RESULTS ===
+
+Training Loss: 4.9784
+
+Effective Sample Size: 929.1
+
+Sampling Efficiency: 92.9%
+
+Sample Mean Deviation: 0.0407
+
+Sample Std Deviation: 0.0356
+
+==========================
 
 === Experiment Errors ===
 
-2025-09-15 11:35:38,469 - INFO - Starting neutrino interaction simulation experiment
+2025-09-15 11:48:24,272 - INFO - Starting neutrino interaction simulation experiment
 
-2025-09-15 11:35:38,812 - INFO - Generating synthetic neutrino interaction data
+2025-09-15 11:48:24,281 - INFO - Generating synthetic neutrino interaction data
 
-2025-09-15 11:35:49,439 - INFO - Starting training
+2025-09-15 11:48:34,828 - INFO - Starting training
 
-2025-09-15 11:35:49,568 - ERROR - Critical error occurred: The size of tensor a (512) must match the size of tensor b (4) at non-singleton dimension 0
+2025-09-15 11:48:35,563 - INFO - Epoch 0, Loss: 5.7205
 
-2025-09-15 11:35:49,568 - ERROR - Terminating experiment due to critical error
+2025-09-15 11:48:37,072 - INFO - Epoch 5, Loss: 5.2132
+
+2025-09-15 11:48:38,562 - INFO - Epoch 10, Loss: 5.0991
+
+2025-09-15 11:48:40,058 - INFO - Epoch 15, Loss: 5.0258
+
+2025-09-15 11:48:41,544 - INFO - Epoch 20, Loss: 5.0199
+
+2025-09-15 11:48:43,044 - INFO - Epoch 25, Loss: 4.9840
+
+2025-09-15 11:48:44,254 - INFO - Training completed. Best loss: 4.9784
+
+2025-09-15 11:48:44,255 - INFO - Evaluating sampling efficiency
+
+2025-09-15 11:48:44,258 - INFO - Effective Sample Size: 929.1 / 1000
+
+2025-09-15 11:48:44,258 - INFO - Sampling Efficiency: 92.9%
+
+2025-09-15 11:48:44,258 - INFO - SUCCESS: Achieved target sampling efficiency
+
+2025-09-15 11:48:44,258 - INFO - Experiment completed successfully
 
 {
 
-"experimentStatusCode": 500,
+"experimentStatusCode": 200,
 
 "body": {
 
-"message": "Experiment failed",
+"message": "Experiment completed successfully",
 
-"returncode": 1,
+"returncode": 0,
 
-"stdout": "",
+"stdout": "\n=== EXPERIMENT RESULTS ===\nTraining Loss: 4.9784\nEffective Sample Size: 929.1\nSampling Efficiency: 92.9%\nSample Mean Deviation: 0.0407\nSample Std Deviation: 0.0356\n==========================\n",
 
-"stderr": "2025-09-15 11:35:38,469 - INFO - Starting neutrino interaction simulation experiment\n2025-09-15 11:35:38,812 - INFO - Generating synthetic neutrino interaction data\n2025-09-15 11:35:49,439 - INFO - Starting training\n2025-09-15 11:35:49,568 - ERROR - Critical error occurred: The size of tensor a (512) must match the size of tensor b (4) at non-singleton dimension 0\n2025-09-15 11:35:49,568 - ERROR - Terminating experiment due to critical error\n",
+"stderr": "2025-09-15 11:48:24,272 - INFO - Starting neutrino interaction simulation experiment\n2025-09-15 11:48:24,281 - INFO - Generating synthetic neutrino interaction data\n2025-09-15 11:48:34,828 - INFO - Starting training\n2025-09-15 11:48:35,563 - INFO - Epoch 0, Loss: 5.7205\n2025-09-15 11:48:37,072 - INFO - Epoch 5, Loss: 5.2132\n2025-09-15 11:48:38,562 - INFO - Epoch 10, Loss: 5.0991\n2025-09-15 11:48:40,058 - INFO - Epoch 15, Loss: 5.0258\n2025-09-15 11:48:41,544 - INFO - Epoch 20, Loss: 5.0199\n2025-09-15 11:48:43,044 - INFO - Epoch 25, Loss: 4.9840\n2025-09-15 11:48:44,254 - INFO - Training completed. Best loss: 4.9784\n2025-09-15 11:48:44,255 - INFO - Evaluating sampling efficiency\n2025-09-15 11:48:44,258 - INFO - Effective Sample Size: 929.1 / 1000\n2025-09-15 11:48:44,258 - INFO - Sampling Efficiency: 92.9%\n2025-09-15 11:48:44,258 - INFO - SUCCESS: Achieved target sampling efficiency\n2025-09-15 11:48:44,258 - INFO - Experiment completed successfully\n",
 
 "execution_time": null
 
@@ -33,48 +69,14 @@ INIT_REPORT Init Duration: 10001.97 ms	Phase: init	Status: timeout
 
 }
 
-INIT_REPORT Init Duration: 13758.96 ms	Phase: invoke	Status: error	Error Type: Runtime.ExitError
+INIT_REPORT Init Duration: 22175.92 ms	Phase: invoke	Status: error	Error Type: Runtime.ExitError
 
-START RequestId: 09ecb6df-6f3e-45f8-b2b5-77ecf1e3950b Version: $LATEST
+START RequestId: 10408fa5-ac24-4318-9fb4-97ace34a498e Version: $LATEST
 
-RequestId: 09ecb6df-6f3e-45f8-b2b5-77ecf1e3950b Error: Runtime exited without providing a reason
+RequestId: 10408fa5-ac24-4318-9fb4-97ace34a498e Error: Runtime exited without providing a reason
 Runtime.ExitError
 
-END RequestId: 09ecb6df-6f3e-45f8-b2b5-77ecf1e3950b
+END RequestId: 10408fa5-ac24-4318-9fb4-97ace34a498e
 
-REPORT RequestId: 09ecb6df-6f3e-45f8-b2b5-77ecf1e3950b	Duration: 13760.87 ms	Billed Duration: 13761 ms	Memory Size: 3008 MB	Max Memory Used: 320 MB	
-
-=== Experiment Errors ===
-
-2025-09-15 11:35:51,780 - INFO - Starting neutrino interaction simulation experiment
-
-2025-09-15 11:35:51,786 - INFO - Generating synthetic neutrino interaction data
-
-2025-09-15 11:35:52,801 - INFO - Starting training
-
-2025-09-15 11:35:52,810 - ERROR - Critical error occurred: The size of tensor a (512) must match the size of tensor b (4) at non-singleton dimension 0
-
-2025-09-15 11:35:52,810 - ERROR - Terminating experiment due to critical error
-
-{
-
-"experimentStatusCode": 500,
-
-"body": {
-
-"message": "Experiment failed",
-
-"returncode": 1,
-
-"stdout": "",
-
-"stderr": "2025-09-15 11:35:51,780 - INFO - Starting neutrino interaction simulation experiment\n2025-09-15 11:35:51,786 - INFO - Generating synthetic neutrino interaction data\n2025-09-15 11:35:52,801 - INFO - Starting training\n2025-09-15 11:35:52,810 - ERROR - Critical error occurred: The size of tensor a (512) must match the size of tensor b (4) at non-singleton dimension 0\n2025-09-15 11:35:52,810 - ERROR - Terminating experiment due to critical error\n",
-
-"execution_time": null
-
-}
-
-}
-
-INIT_REPORT Init Duration: 3125.99 ms	Phase: init	Status: error	Error Type: Runtime.ExitError
+REPORT RequestId: 10408fa5-ac24-4318-9fb4-97ace34a498e	Duration: 22177.94 ms	Billed Duration: 22178 ms	Memory Size: 3008 MB	Max Memory Used: 317 MB	
 
