@@ -1,0 +1,80 @@
+Lambda Execution Result (Latest Run):
+INIT_REPORT Init Duration: 10001.97 ms	Phase: init	Status: timeout
+
+=== Experiment Errors ===
+
+2025-09-15 11:35:38,469 - INFO - Starting neutrino interaction simulation experiment
+
+2025-09-15 11:35:38,812 - INFO - Generating synthetic neutrino interaction data
+
+2025-09-15 11:35:49,439 - INFO - Starting training
+
+2025-09-15 11:35:49,568 - ERROR - Critical error occurred: The size of tensor a (512) must match the size of tensor b (4) at non-singleton dimension 0
+
+2025-09-15 11:35:49,568 - ERROR - Terminating experiment due to critical error
+
+{
+
+"experimentStatusCode": 500,
+
+"body": {
+
+"message": "Experiment failed",
+
+"returncode": 1,
+
+"stdout": "",
+
+"stderr": "2025-09-15 11:35:38,469 - INFO - Starting neutrino interaction simulation experiment\n2025-09-15 11:35:38,812 - INFO - Generating synthetic neutrino interaction data\n2025-09-15 11:35:49,439 - INFO - Starting training\n2025-09-15 11:35:49,568 - ERROR - Critical error occurred: The size of tensor a (512) must match the size of tensor b (4) at non-singleton dimension 0\n2025-09-15 11:35:49,568 - ERROR - Terminating experiment due to critical error\n",
+
+"execution_time": null
+
+}
+
+}
+
+INIT_REPORT Init Duration: 13758.96 ms	Phase: invoke	Status: error	Error Type: Runtime.ExitError
+
+START RequestId: 09ecb6df-6f3e-45f8-b2b5-77ecf1e3950b Version: $LATEST
+
+RequestId: 09ecb6df-6f3e-45f8-b2b5-77ecf1e3950b Error: Runtime exited without providing a reason
+Runtime.ExitError
+
+END RequestId: 09ecb6df-6f3e-45f8-b2b5-77ecf1e3950b
+
+REPORT RequestId: 09ecb6df-6f3e-45f8-b2b5-77ecf1e3950b	Duration: 13760.87 ms	Billed Duration: 13761 ms	Memory Size: 3008 MB	Max Memory Used: 320 MB	
+
+=== Experiment Errors ===
+
+2025-09-15 11:35:51,780 - INFO - Starting neutrino interaction simulation experiment
+
+2025-09-15 11:35:51,786 - INFO - Generating synthetic neutrino interaction data
+
+2025-09-15 11:35:52,801 - INFO - Starting training
+
+2025-09-15 11:35:52,810 - ERROR - Critical error occurred: The size of tensor a (512) must match the size of tensor b (4) at non-singleton dimension 0
+
+2025-09-15 11:35:52,810 - ERROR - Terminating experiment due to critical error
+
+{
+
+"experimentStatusCode": 500,
+
+"body": {
+
+"message": "Experiment failed",
+
+"returncode": 1,
+
+"stdout": "",
+
+"stderr": "2025-09-15 11:35:51,780 - INFO - Starting neutrino interaction simulation experiment\n2025-09-15 11:35:51,786 - INFO - Generating synthetic neutrino interaction data\n2025-09-15 11:35:52,801 - INFO - Starting training\n2025-09-15 11:35:52,810 - ERROR - Critical error occurred: The size of tensor a (512) must match the size of tensor b (4) at non-singleton dimension 0\n2025-09-15 11:35:52,810 - ERROR - Terminating experiment due to critical error\n",
+
+"execution_time": null
+
+}
+
+}
+
+INIT_REPORT Init Duration: 3125.99 ms	Phase: init	Status: error	Error Type: Runtime.ExitError
+
